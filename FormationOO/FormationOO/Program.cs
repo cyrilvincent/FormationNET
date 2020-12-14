@@ -79,5 +79,12 @@ namespace FormationOO
          *Faire la fonction IsPrime(int nb) qui retourne true si nombre premier
          *  Tout nombre >= 2 est premier sauf s'il possède un diviseur compris entre 2 et n-1
          */
+
+        /*
+         * TP2
+         * Class Book : Amazon (6-8 attributs + 0 méthodes)
+         * Point 3d : Catia
+         * BankAccount : Banquier
+         * 14h10
     }
 }
