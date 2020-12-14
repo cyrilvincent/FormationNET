@@ -7,18 +7,19 @@ namespace FormationOO
 {
     public class Account
     {
-        private int owner;
-        private int id;
-        private int balance;
+        public string owner;
+        public int id;
+        public double balance;
 
-        public void Withdraw()
+        public double Withdraw(double amount)
         {
-            throw new System.NotImplementedException();
+            balance -= amount;
+            return amount;
         }
 
-        public void Deposit()
+        public void Deposit(double amount)
         {
-            throw new System.NotImplementedException();
+            balance += amount;
         }
     }
 }
