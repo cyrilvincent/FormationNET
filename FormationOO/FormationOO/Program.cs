@@ -20,7 +20,7 @@ namespace FormationOO
             string s = Console.ReadLine();
             Console.WriteLine(s);
             int nb = int.Parse(s);
-            if(nb % 2 == 0)
+            if(isEven(nb))
             {
                 Console.WriteLine("Pair");
             }
@@ -28,18 +28,48 @@ namespace FormationOO
             {
                 Console.WriteLine("Impair");
             }
-            int[] tab = { 1, 99, 3, 4 };
+            Console.WriteLine("Est premier " + IsPrime(nb));
+            /*int[] tab = { 1, 99, 3, 4 };
             foreach(int i in tab)
             {
                 Console.WriteLine(i);
             }
-            for(int i=0;i<10;i++)
+            DisplayFor(10);
+            int res = Add(3, 2);
+            Console.WriteLine(res);*/
+            Console.ReadKey();
+        }
+
+        static bool isEven(int x)
+        {
+            return x % 2 == 0;
+        }
+
+        static void DisplayFor(int nb)
+        {
+            for(int i = 0; i < nb; i++)
             {
                 Console.WriteLine(i);
             }
-            int res = Add(3, 2);
-            Console.WriteLine(res);
-            Console.ReadKey();
+        }
+
+        static bool IsPrime(int nb)
+        {
+            if(nb < 2)
+            {
+                return false;
+            }
+            else
+            {
+                for(int div = 2; div < nb; div++)
+                {
+                    if(nb % div == 0)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
         }
 
         /*TP1
