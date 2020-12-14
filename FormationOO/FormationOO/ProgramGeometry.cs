@@ -14,7 +14,7 @@ namespace FormationOO
             Point p1 = new Point();
             p1.X = 3;
             p1.Y = 4;
-            p1.z = -2;
+            p1.Z = -2;
             p1.Display();
             p1.Move(1, 1, 1);
             p1.Display();

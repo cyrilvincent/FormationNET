@@ -8,8 +8,8 @@ namespace FormationOO
     public class Point
     {
         private double x; // Attribute
-        private double y; // Field
-        private double Z { get; set; }
+        public double Y { get; set; }
+        public double Z { get; set; }
 
         public double X
         {
@@ -19,14 +19,14 @@ namespace FormationOO
 
         public void Display() // UML : Operation
         {
-            Console.WriteLine($"({x},{y},{Z})");
+            Console.WriteLine($"({X},{Y},{Z})");
         }
 
         public void Move(double x, double y, double z) // Code : Method
         {
-            this.x = x;
-            this.y = y;
-            this.Z = z;
+            X = x;
+            Y = y;
+            Z = z;
         }
     }
 }

@@ -7,12 +7,12 @@ namespace FormationOO
 {
     public class Book
     {
-        private string title;
-        private int authors;
-        private double price;
-        private string theme;
-        private int note;
-        private int nbPage;
-        private int isbn;
+        public string Title { get; set; }
+        public int Authors { get; set; }
+        public double Price { get; set; }
+        public string Theme { get; set; }
+        public int Note { get; set; }
+        public int NbPage { get; set; }
+        public int Isbn { get; set; }
     }
 }

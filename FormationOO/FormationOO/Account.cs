@@ -7,8 +7,8 @@ namespace FormationOO
 {
     public class Account
     {
-        private string owner;
-        private int id;
+        public string Owner { get; set; }
+        public int Id { get; set; }
         private double balance;
 
         public double Withdraw(double amount)
