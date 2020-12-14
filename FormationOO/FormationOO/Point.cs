@@ -7,18 +7,20 @@ namespace FormationOO
 {
     public class Point
     {
-        private double x;
-        private double y;
-        private double z;
+        public double x; // Attribute
+        public double y; // Field
+        public double z; // Members = Attributes + Methods
 
-        public void Display()
+        public void Display() // UML : Operation
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine($"({x},{y},{z})");
         }
 
-        public void Move()
+        public void Move(double x, double y, double z) // Code : Method
         {
-            throw new System.NotImplementedException();
+            this.x = x;
+            this.y = y;
+            this.z = z;
         }
     }
 }

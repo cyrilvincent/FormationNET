@@ -85,6 +85,6 @@ namespace FormationOO
          * Class Book : Amazon (6-8 attributs + 0 méthodes)
          * Point 3d : Catia
          * BankAccount : Banquier
-         * 14h10
+         * 14h10*/
     }
 }
