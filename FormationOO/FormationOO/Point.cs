@@ -7,20 +7,26 @@ namespace FormationOO
 {
     public class Point
     {
-        public double x; // Attribute
-        public double y; // Field
-        public double z; // Members = Attributes + Methods
+        private double x; // Attribute
+        private double y; // Field
+        private double Z { get; set; }
+
+        public double X
+        {
+            get { return x; }
+            set { x = value; }
+        }
 
         public void Display() // UML : Operation
         {
-            Console.WriteLine($"({x},{y},{z})");
+            Console.WriteLine($"({x},{y},{Z})");
         }
 
         public void Move(double x, double y, double z) // Code : Method
         {
             this.x = x;
             this.y = y;
-            this.z = z;
+            this.Z = z;
         }
     }
 }

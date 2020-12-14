@@ -7,13 +7,20 @@ namespace FormationOO
 {
     public class Account
     {
-        public string owner;
-        public int id;
-        public double balance;
+        private string owner;
+        private int id;
+        private double balance;
 
         public double Withdraw(double amount)
         {
-            balance -= amount;
+            if (amount < balance)
+            {
+                balance -= amount;
+            }
+            else
+            {
+                // TODO
+            }
             return amount;
         }
 
@@ -21,5 +28,12 @@ namespace FormationOO
         {
             balance += amount;
         }
+
+        public double Balance { 
+            get {
+                return balance;
+            }
+        }
+
     }
 }

@@ -12,11 +12,11 @@ namespace FormationOO
         {
             Console.WriteLine("Bank");
             Account account = new Account();
-            Console.WriteLine($"Balance: {account.balance}");
+            Console.WriteLine($"Balance: {account.Balance}");
             account.Deposit(100);
-            Console.WriteLine($"Balance: {account.balance}");
+            Console.WriteLine($"Balance: {account.Balance}");
             account.Withdraw(50);
-            Console.WriteLine($"Balance: {account.balance}");
+            Console.WriteLine($"Balance: {account.Balance}");
             Console.ReadKey();
         }
     }
