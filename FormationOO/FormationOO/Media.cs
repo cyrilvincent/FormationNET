@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FormationOO
 {
-    public class Media
+    public abstract class Media
     {
         public string Title { get; set; }
         public List<Author> Authors { get; set; }
@@ -28,9 +28,11 @@ namespace FormationOO
             Publisher = publisher;
         }
 
-        public virtual double VATPrice // redefinissable
+        /*public virtual double VATPrice // redefinissable
         {
             get { return Price * 1.2; }
-        }
+        }*/
+
+        public abstract double VATPrice { get; }
     }
 }

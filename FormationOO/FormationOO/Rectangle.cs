@@ -11,7 +11,7 @@ namespace FormationOO
         public double Length { get; set; } // auto-implemented
         public double Width { get; set; }
 
-        public double Area
+        public virtual double Area
         {
             get { return Length * Area; }
         }
