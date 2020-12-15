@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>FormationOO.ProgramGeometry</StartupObject>
+    <StartupObject>FormationOO.ProgramMedia</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,7 @@
     <Compile Include="Account.cs" />
     <Compile Include="Author.cs" />
     <Compile Include="Book.cs" />
+    <Compile Include="Cart.cs" />
     <Compile Include="Cd.cs" />
     <Compile Include="Losange.cs" />
     <Compile Include="Media.cs" />

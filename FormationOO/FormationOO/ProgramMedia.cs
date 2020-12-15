@@ -24,6 +24,11 @@ namespace FormationOO
             }
             Cd cd1 = new Cd("007", "Allumez le feu", 10, authors, nbTrack: 9);
             Console.WriteLine($"CD VATPrice: {cd1.VATPrice}");
+            Cart cart = new Cart();
+            cart.Add(b1);
+            cart.Add(cd1);
+            Console.WriteLine($"Cart: {cart.TotalVATPrice}");
+            
             Console.ReadKey();
 
             /*
