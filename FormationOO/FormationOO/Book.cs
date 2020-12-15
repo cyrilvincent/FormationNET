@@ -20,7 +20,7 @@ namespace FormationOO
             get { return Id; }
         }
 
-        public double VATPrice
+        public override double VATPrice
         {
             get { return Price * 1.05; }
         }

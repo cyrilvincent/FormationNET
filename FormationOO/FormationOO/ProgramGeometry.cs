@@ -19,6 +19,15 @@ namespace FormationOO
             Point p2 = new Point(2, 2,2);
             r.Move(p2);
             Console.WriteLine(r.Origin.X);
+
+            Quadrilatere q = new Rectangle(0,0,origin:p1);
+            List<Quadrilatere> list = new List<Quadrilatere>();
+            list.Add(r);
+            Losange l = new Losange(0, 0, p1);
+            list.Add(l);
+            int random = 1;
+            Quadrilatere q2 = list[random];
+
             Console.ReadKey();
 
 
@@ -29,6 +38,19 @@ namespace FormationOO
              *    |
              * Square
              * */
-        }
-    }
+
+
+
+/*
+ * Mammifere.move
+ * Chien Chat Baleine Antilope Lion Humain
+ * 
+ * Troupeau  = List<Mammifere>
+ * Troupeau.Add(chien)
+ * Troupeau.Add(baleine) 
+ * Ajoute Chien Chat Baleine Antilope Lion Humain
+ * Troupeau[random].move
+ * */
+}
+}
 }

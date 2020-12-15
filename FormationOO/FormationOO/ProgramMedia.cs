@@ -32,6 +32,11 @@ namespace FormationOO
              * Cd : nbTrack
              * Dvd : zone
              * */
+
+            /*
+             * Créer la classe Cart() je peux mettre des medias
+             * Calculer le prix TTC du panier TotalNetPrice
+             * Tester */
         }
     }
 }

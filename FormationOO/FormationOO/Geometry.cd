@@ -10,12 +10,9 @@
   <Class Name="FormationOO.Rectangle">
     <Position X="1.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAEBAAAAAAAAAAAAAAQgAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAQAAAAA=</HashCode>
       <FileName>Rectangle.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Origin" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="FormationOO.Square">
     <Position X="1.25" Y="4.25" Width="1.5" />

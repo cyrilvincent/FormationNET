@@ -28,7 +28,7 @@ namespace FormationOO
             Publisher = publisher;
         }
 
-        public double VATPrice
+        public virtual double VATPrice // redefinissable
         {
             get { return Price * 1.2; }
         }
