@@ -52,6 +52,8 @@
     <Compile Include="Book.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Cd.cs" />
+    <Compile Include="DSP.cs" />
+    <Compile Include="IMedia.cs" />
     <Compile Include="Losange.cs" />
     <Compile Include="Media.cs" />
     <Compile Include="Point.cs" />

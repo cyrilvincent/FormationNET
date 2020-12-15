@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FormationOO
 {
-    public abstract class Media
+    public abstract class Media : IMedia
     {
         public string Title { get; set; }
         public List<Author> Authors { get; set; }

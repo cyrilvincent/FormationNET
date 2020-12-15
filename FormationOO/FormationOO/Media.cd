@@ -33,6 +33,7 @@
     <ShowAsCollectionAssociation>
       <Property Name="Authors" />
     </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="FormationOO.Cd">
     <Position X="2.75" Y="4" Width="1.5" />
