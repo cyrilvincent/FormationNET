@@ -11,7 +11,7 @@ namespace FormationOO
         static void Main(string[] args)
         {
             Console.WriteLine("Bank");
-            Account account = new Account();
+            Account account = new Account(123,"Cyril");
             Console.WriteLine($"Balance: {account.Balance}");
             account.Deposit(100);
             Console.WriteLine($"Balance: {account.Balance}");

@@ -2,8 +2,11 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="FormationOO.Account">
     <Position X="3" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAMAAAAAAAAAAAAAAAAAgI=</HashCode>
+      <HashCode>AAACAACAAAAAAAAAAAgAAAAMAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Account.cs</FileName>
     </TypeIdentifier>
   </Class>

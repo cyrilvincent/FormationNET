@@ -13,12 +13,22 @@ namespace FormationOO
         public string Theme { get; set; }
         public int Note { get; set; }
         public int NbPage { get; set; }
-        public int Isbn { get; set; }
+        public string Isbn { get; set; }
 
-        /*
-         * Créer un constructeur, avec des valeurs par défauts
-         * Créer le programme de test
-         * Créer la propriété VATPrice = Price * 1.05
-         */ 
+        public Book(string isbn, string title, double price, string authors="", string theme="", int nbPage = 0)
+        {
+            Isbn = isbn;
+            Title = title;
+            Price = price;
+            Authors = authors;
+            Theme = theme;
+            NbPage = nbPage;
+            Note = 0;
+        }
+
+        public double VATPrice
+        {
+            get { return Price * 1.05; }
+        }
     }
 }
