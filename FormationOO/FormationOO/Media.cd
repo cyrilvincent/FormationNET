@@ -34,10 +34,10 @@
       <Property Name="Authors" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="FormationOO.Cd" Collapsed="true">
+  <Class Name="FormationOO.Cd">
     <Position X="2.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>Cd.cs</FileName>
     </TypeIdentifier>
   </Class>

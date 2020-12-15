@@ -31,16 +31,24 @@ namespace FormationOO
             }
             else
             {
-                // TODO
+                throw new BankException("Amount > Balance", Id);
             }
             return amount;
         }
 
         public void Deposit(double amount)
         {
-            balance += amount;
-            Transaction transaction = new Transaction(amount);
-            Transactions.Add(transaction);
+            if(amount > 0)
+            {
+                balance += amount;
+                Transaction transaction = new Transaction(amount);
+                Transactions.Add(transaction);
+            }
+            else
+            {
+                throw new BankException("Amount < 0", Id);
+            }
+            
         }
 
         public double Balance { 

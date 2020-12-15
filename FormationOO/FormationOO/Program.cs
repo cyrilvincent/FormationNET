@@ -19,16 +19,29 @@ namespace FormationOO
             Console.Write("Saisir un entier: ");
             string s = Console.ReadLine();
             Console.WriteLine(s);
-            int nb = int.Parse(s);
-            if(isEven(nb))
+            try
             {
-                Console.WriteLine("Pair");
+                int nb = int.Parse(s);
+                if (isEven(nb))
+                {
+                    Console.WriteLine("Pair");
+                }
+                else
+                {
+                    Console.WriteLine("Impair");
+                }
+                Console.WriteLine("Est premier " + IsPrime(nb));
             }
-            else
+            catch(FormatException ex)
             {
-                Console.WriteLine("Impair");
+                Console.WriteLine("Must be an integer");
             }
-            Console.WriteLine("Est premier " + IsPrime(nb));
+            catch (OverflowException ex)
+            {
+                Console.WriteLine("Integer must be < 2e64");
+            }
+
+           
             /*int[] tab = { 1, 99, 3, 4 };
             foreach(int i in tab)
             {

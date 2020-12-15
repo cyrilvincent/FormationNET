@@ -18,6 +18,14 @@ namespace FormationOO
             account.Withdraw(50);
             Console.WriteLine($"Balance: {account.Balance}");
             Console.WriteLine($"Transactions: {account.Transactions.Count}");
+            try
+            {
+                account.Withdraw(10000);
+            }
+            catch(BankException ex)
+            {
+                Console.WriteLine("Error "+ex.Message);
+            }
             Console.ReadKey();
         }
     }

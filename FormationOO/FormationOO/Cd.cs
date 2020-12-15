@@ -12,7 +12,7 @@ namespace FormationOO
 
         public override double VATPrice
         {
-            get { return VATPrice * 1.2; }
+            get { return Price * 1.2; }
         }
         public Cd(string id, string title, double price, List<Author> authors, string theme = "", int nbTrack = 0, Publisher publisher = null)
             : base(id, title, price, authors, theme, publisher)
