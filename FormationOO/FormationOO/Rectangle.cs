@@ -25,5 +25,10 @@ namespace FormationOO
             Origin = origin;
         }
 
+        public void Move(Point destination)
+        {
+            Origin = destination;
+        }
+
     }
 }

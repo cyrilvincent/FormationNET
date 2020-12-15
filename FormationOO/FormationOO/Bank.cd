@@ -6,8 +6,18 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAACAACAAAAAAAAAAAgAAAAMAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>AACCAACAAAAAAAAAAAgAAAAMAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Account.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Transactions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FormationOO.Transaction">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Transaction.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

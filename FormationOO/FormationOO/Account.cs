@@ -11,13 +11,14 @@ namespace FormationOO
         public int Id { get; set; }
         private double balance;
 
-        // Account possède * transactions (DateTime.Now, amount < 0 si débit, > 0 sinon)
-        // Un Deposit et Withdraw créé une transaction
+        public List<Transaction> Transactions { get; private set; }
+
         public Account(int id, string owner)
         {
             Id = id;
             Owner = owner;
             balance = 0;
+            Transactions = new List<Transaction>();
         }
 
         public double Withdraw(double amount)
@@ -25,6 +26,8 @@ namespace FormationOO
             if (amount < balance)
             {
                 balance -= amount;
+                Transaction transaction = new Transaction(-amount);
+                Transactions.Add(transaction);
             }
             else
             {
@@ -36,6 +39,8 @@ namespace FormationOO
         public void Deposit(double amount)
         {
             balance += amount;
+            Transaction transaction = new Transaction(amount);
+            Transactions.Add(transaction);
         }
 
         public double Balance { 

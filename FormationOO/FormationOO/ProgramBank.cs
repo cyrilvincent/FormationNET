@@ -17,6 +17,7 @@ namespace FormationOO
             Console.WriteLine($"Balance: {account.Balance}");
             account.Withdraw(50);
             Console.WriteLine($"Balance: {account.Balance}");
+            Console.WriteLine($"Transactions: {account.Transactions.Count}");
             Console.ReadKey();
         }
     }

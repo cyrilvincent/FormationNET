@@ -15,9 +15,9 @@ namespace FormationOO
         public int NbPage { get; set; }
         public string Isbn { get; set; }
 
-        // Book possède 1 publisher
+        public Publisher Publisher { get; set; }
 
-        public Book(string isbn, string title, double price, List<Author> authors, string theme="", int nbPage = 0)
+        public Book(string isbn, string title, double price, List<Author> authors, string theme="", int nbPage = 0, Publisher publisher = null)
         {
             Isbn = isbn;
             Title = title;
@@ -26,6 +26,7 @@ namespace FormationOO
             Theme = theme;
             NbPage = nbPage;
             Note = 0;
+            Publisher = publisher;
         }
 
         public double VATPrice
