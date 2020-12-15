@@ -20,6 +20,15 @@ namespace FormationOO
             r.Move(p2);
             Console.WriteLine(r.Origin.X);
             Console.ReadKey();
+
+
+            /*
+             * Rectangle ---HAS--- Point
+             *    |
+             *    IS
+             *    |
+             * Square
+             * */
         }
     }
 }

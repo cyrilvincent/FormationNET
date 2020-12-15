@@ -14,14 +14,14 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="FormationOO.Author">
-    <Position X="4.25" Y="1.5" Width="1.5" />
+    <Position X="4.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Author.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FormationOO.Publisher">
-    <Position X="4.25" Y="3.25" Width="1.5" />
+    <Position X="4.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Publisher.cs</FileName>

@@ -23,6 +23,13 @@ namespace FormationOO
                 Console.WriteLine($"Author: {a.Name}");
             }
             Console.ReadKey();
+
+            /*
+             * Media
+             * Book hérite de Media : npPage
+             * Cd : nbTrack
+             * Dvd : zone
+             * */
         }
     }
 }
