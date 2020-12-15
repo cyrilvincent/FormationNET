@@ -1,10 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="FormationOO.Book">
-    <Position X="2" Y="1.25" Width="1.5" />
+    <Position X="0.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAAAAAAQAAAEAQCAAAAAAAAYBAAAAAAAAAAAEAAAA=</HashCode>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FormationOO.Author">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Author.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FormationOO.Publisher">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Publisher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FormationOO.Media">
+    <Position X="0.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAEAQCAAAAAAAAIBAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Media.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Publisher" />
@@ -13,18 +34,11 @@
       <Property Name="Authors" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="FormationOO.Author">
-    <Position X="4.75" Y="1.5" Width="1.5" />
+  <Class Name="FormationOO.Cd" Collapsed="true">
+    <Position X="2.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Author.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="FormationOO.Publisher">
-    <Position X="4.75" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Publisher.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Cd.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

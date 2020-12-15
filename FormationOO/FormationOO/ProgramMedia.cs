@@ -22,6 +22,8 @@ namespace FormationOO
             {
                 Console.WriteLine($"Author: {a.Name}");
             }
+            Cd cd1 = new Cd("007", "Allumez le feu", 10, authors, nbTrack: 9);
+            Console.WriteLine($"CD VATPrice: {cd1.VATPrice}");
             Console.ReadKey();
 
             /*
