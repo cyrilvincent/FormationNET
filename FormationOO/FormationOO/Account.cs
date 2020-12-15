@@ -10,7 +10,9 @@ namespace FormationOO
         public string Owner { get; set; }
         public int Id { get; set; }
         private double balance;
-        
+
+        // Account possède * transactions (DateTime.Now, amount < 0 si débit, > 0 sinon)
+        // Un Deposit et Withdraw créé une transaction
         public Account(int id, string owner)
         {
             Id = id;
