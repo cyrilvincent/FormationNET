@@ -9,11 +9,13 @@ namespace FormationOO.DSP
     public class DSP
     {
         /**
-         * Percage = Trou diametre position profondeur
-         * Piece = Percages
-         * Plusieurs types de pieces (materiel, forme, epaisseur)
+         * Percage = Trou avec diametre position profondeur
+         * Piece = Des percageS, dimensions, epaisseur, materiel 
+         * Plusieurs types de pieces (formeS)
          * Plusieurs types de percage taraud, evidage
-         * Type de foret
+         * Pour effectuer un percage il faut un foret
+         * Plusieurs types de forets avec des incompatibilités
+         * Machine Outil : Fonction de percer(Piece, percages, forêt)
          * */
     }
 }

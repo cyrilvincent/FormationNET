@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>FormationOO.Drivers.ProgramVideoGame</StartupObject>
+    <StartupObject>FormationOO.ProgramMedia</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,12 +52,13 @@
     <Compile Include="Book.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="Cd.cs" />
+    <Compile Include="Counter.cs" />
     <Compile Include="Drivers\IDriver.cs" />
     <Compile Include="Drivers\IntelDriver.cs" />
     <Compile Include="Drivers\NVidiaDriver.cs" />
     <Compile Include="Drivers\ProgramVideoGame.cs" />
     <Compile Include="Drivers\VideoGame.cs" />
-    <Compile Include="DSP.cs" />
+    <Compile Include="DSP\DSP.cs" />
     <Compile Include="IMedia.cs" />
     <Compile Include="Losange.cs" />
     <Compile Include="Media.cs" />
@@ -77,6 +78,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Bank.cd" />
+    <None Include="Drivers\VideoGame.cd" />
+    <None Include="DSP\DSP.cd" />
     <None Include="Geometry.cd" />
     <None Include="Media.cd" />
     <None Include="OO.docx" />

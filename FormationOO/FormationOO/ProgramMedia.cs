@@ -28,7 +28,12 @@ namespace FormationOO
             cart.Add(b1);
             cart.Add(cd1);
             Console.WriteLine($"Cart: {cart.TotalVATPrice}");
-            
+            Console.WriteLine($"NbMedia: {Media.NbMedia}");
+            b1 = null;
+            GC.Collect();
+            // Garbage Collector
+            Console.ReadKey();
+            Console.WriteLine($"NbMedia: {Media.NbMedia}");
             Console.ReadKey();
 
             /*

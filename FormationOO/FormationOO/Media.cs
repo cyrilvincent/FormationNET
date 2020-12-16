@@ -17,6 +17,8 @@ namespace FormationOO
 
         public Publisher Publisher { get; set; }
 
+        public static int NbMedia { get; private set; } = 0;
+
         public Media(string id, string title, double price, List<Author> authors, string theme = "", Publisher publisher = null)
         {
             Id = id;
@@ -26,6 +28,12 @@ namespace FormationOO
             Theme = theme;
             Note = 0;
             Publisher = publisher;
+            NbMedia++;
+        }
+
+        ~Media()
+        {
+            NbMedia--;
         }
 
         /*public virtual double VATPrice // redefinissable
