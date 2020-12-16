@@ -47,6 +47,17 @@ namespace FormationOO
              * Créer la classe Cart() je peux mettre des medias
              * Calculer le prix TTC du panier TotalNetPrice
              * Tester */
+
+            /*
+             * Entities = DATA
+             * Repositories = Accès aux DATA (SQL, TXT, CSV, ...)
+             *      Accès aux data
+             *      Ne doit pas être fait dans une entité
+             *      Retourne des entités
+             *      Idiots
+             * Services = Intelligence + Worflow
+             * UX = GUI = IHM = Graphique
+             * */
         }
     }
 }

@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="FormationOO.Book">
-    <Position X="0.75" Y="4" Width="1.5" />
+  <Class Name="FormationOO.Book" Collapsed="true">
+    <Position X="4.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Book.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FormationOO.Author">
-    <Position X="3.5" Y="1.5" Width="1.5" />
+  <Class Name="FormationOO.Author" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Author.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FormationOO.Publisher">
-    <Position X="5.75" Y="3.75" Width="1.5" />
+  <Class Name="FormationOO.Publisher" Collapsed="true">
+    <Position X="9.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Publisher.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FormationOO.Media">
-    <Position X="0.75" Y="1" Width="1.5" />
+  <Class Name="FormationOO.Media" Collapsed="true">
+    <Position X="4.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAQAAAEAQCAAAAAAAAIBAAAAAAAAAAAEAAAA=</HashCode>
+      <HashCode>AAACAAAAAQAAAEAQCAAAAAQAAIBAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Media.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -35,15 +35,15 @@
     </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="FormationOO.Cd">
-    <Position X="2.75" Y="4" Width="1.5" />
+  <Class Name="FormationOO.Cd" Collapsed="true">
+    <Position X="6.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>Cd.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FormationOO.Cart" Collapsed="true">
-    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAAAAAAABAQAAAAAAAgAAAAAAAAAAAQ=</HashCode>
       <FileName>Cart.cs</FileName>
@@ -52,5 +52,38 @@
       <Property Name="Medias" />
     </ShowAsCollectionAssociation>
   </Class>
+  <Class Name="FormationOO.SqlMediaRepository" Collapsed="true">
+    <Position X="2.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAABEAAAAAAAAAAACAAAAAAAAAAgAAAAiAAAAAAAAQ=</HashCode>
+      <FileName>IMediaRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FormationOO.MediaService">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAGAgAAAAAAAAAAAQBAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>MediaService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="repository" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="FormationOO.IMediaRepository" Collapsed="true">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAABEAAAAAAAAAAACAAAAAAAAAAgAAAAiAAAAAAAAQ=</HashCode>
+      <FileName>IMediaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FormationOO.IMediaService" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAgAAAAAAAAAAAQBAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>MediaService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
