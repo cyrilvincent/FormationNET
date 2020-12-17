@@ -1,3 +1,5 @@
+using EF.Library;
+using EF.Library.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +34,8 @@ namespace Web.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Web.API", Version = "v1" });
             });
+            services.AddScoped<IMainService, MainService>();
+            services.AddDbContext<MediaContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

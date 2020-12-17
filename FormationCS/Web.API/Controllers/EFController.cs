@@ -1,5 +1,6 @@
 ﻿using EF.Library;
 using EF.Library.Entities;
+using EF.Library.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -14,19 +15,21 @@ namespace Web.API.Controllers
     public class EFController : ControllerBase
     {
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IMainService _service;
 
-        public EFController(ILogger<WeatherForecastController> logger)
+        public EFController(ILogger<WeatherForecastController> logger, IMainService service)
         {
             _logger = logger;
+            _service = service;
         }
 
         [HttpGet]
         [Route("/books")]
         public IEnumerable<Book> GetBooks()
         {
-            MediaContext context = new MediaContext();
-            var books = context.Books.ToList();
+            var books =_service.GetAll().ToList();
             return books;
+
         }
     }
 }
