@@ -4,6 +4,9 @@ using FormationCS;
 Console.WriteLine("Hello, World!");
 Console.WriteLine("Coucou");
 MaClasse.MaFonction();
+List<int> maListe = [3, 8, 2, 8];
+var result = MaClasse.Sum(maListe);
+Console.WriteLine(result);
 //Console.WriteLine(MaClasse.add(2, 3));
 
 // Créer une classe TP1

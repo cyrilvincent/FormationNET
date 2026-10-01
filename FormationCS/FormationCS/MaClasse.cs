@@ -57,5 +57,41 @@ namespace FormationCS
                 return "Odd";
             }
         }
+
+        public static List<int> DemoCollections(List<int> maCollection)
+        {
+            List<int> col1 = [3, 8, 2];
+            for (int i = 0; i < col1.Count(); i++)
+            {
+                Console.WriteLine(col1[i]);
+            }
+            foreach (int i in col1)
+            {
+                Console.WriteLine(i);
+            }
+            List<int> col2 = new List<int>();
+            for (int i = 0;i < 10; i++)
+            {
+                col2.Add(i * 2);
+            }
+            
+            return col2;
+        }
+
+        public static int Sum(List<int> list)
+        {
+            int total = 0;
+            foreach (int i in list)
+            {
+                total += i;
+            }
+            return total;
+        }
+
+        // TP
+        // Refaire sum avec un for à la place du foreach
+        // Multiply : Comme somme mais avec un *
+        // Max : returne la max de la liste
+        // Bonus : NbEven retourne le nombre d'élément pairs de la liste
     }
 }
