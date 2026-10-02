@@ -16,7 +16,20 @@ namespace FormationCS
             var s = "toto";
             double f = 1.999999999;
             Console.WriteLine($"Mon résultat est: {f:N2}");
-            //var input = Console.ReadLine();
+            try
+            {
+                var input = Console.ReadLine();
+                double convert = double.Parse(input);
+            }
+            catch (FormatException fex)
+            {
+                Console.WriteLine($"Erreur {fex.Message}");
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine($"Erreur {ex.Message}");
+            }
+
 
             i = 0;
             while (i < 10)
@@ -94,4 +107,12 @@ namespace FormationCS
         // Max : returne la max de la liste
         // Bonus : NbEven retourne le nombre d'élément pairs de la liste
     }
+
+    // Une méthode saisir où tu va saisir 2 entiers
+    // Convertir les entiers en int
+    // Gérer les erreurs
+    // Ajouter les 2 entiers dans une liste
+    // Rertourner la liste
+    // Bonus : Saisir n entier et erreter la saisie quand on saisie stop
+
 }
