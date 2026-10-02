@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,8 +37,19 @@ namespace FormationCS
             {
                 throw new ArgumentException("Le montant doit être inférieur au solde");
             }
+           
+            
         }
 
+        // Créer la classe Owner
+        // Un compte possède un seul Owner
+        // Créer la classe Transaction
+        // Possède un montant et une date
+        // Il existe le type DateTime.Now
+        // Un compte possède une liste de transaction qui au départ est vide []
+        // Quand tu credites le compte ca créé une transaction positive
+        // Quand tu débites le compte ca créé une transaction négative
+        
 
     }
 }
