@@ -8,28 +8,28 @@ namespace FormationCS
 {
     public class Account
     {
-        private double solde = 0;
-        private long iban;
-        private string? owner;
-        private string? bank;
+        public double Solde { get; private set; } = 0;
+        public long Iban { get; private set; }
+        public string? Owner { get; private set; }
+        public string? Bank { get; private set; }
 
         public Account(long iban, string owner, string bank)
         {
-            this.iban = iban;
-            this.owner = owner;
-            this.bank = bank;
+            this.Iban = iban;
+            this.Owner = owner;
+            this.Bank = bank;
         }
 
         public void Deposer(double amount)
         {
-            this.solde += amount;
+            this.Solde += amount;
         }
 
         public double Retirer(double amount)
         {
-            if (amount <= this.solde)
+            if (amount <= this.Solde)
             {
-                this.solde -= amount;
+                this.Solde -= amount;
                 return amount;
             }
             else
