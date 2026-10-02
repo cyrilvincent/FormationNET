@@ -8,6 +8,20 @@ namespace FormationCS
 {
     public class Rectangle
     {
-        // Surface & Perimetre
+        public double Width { get; set; }
+        public double Height { get; set; }
+        public Point Origin { get; set; }
+
+        public Rectangle(double width, double height, Point origin)
+        {
+            Width = width;
+            Height = height;
+            Origin = origin;
+        }
+
+        public double Surface()
+        {
+            return Width * Height;
+        }
     }
 }

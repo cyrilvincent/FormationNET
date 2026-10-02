@@ -50,6 +50,9 @@ namespace FormationCS
         // Quand tu credites le compte ca créé une transaction positive
         // Quand tu débites le compte ca créé une transaction négative
         
-
+        // AccountWithInterest
+        // Rate
+        // ComputeInterests : rate * solde
+        // AbondeInterest : Créer la transaction crédit avec les interets
     }
 }

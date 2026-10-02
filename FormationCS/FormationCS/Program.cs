@@ -18,7 +18,13 @@ using FormationCS;
 
 var account1 = new Account(1, "Cyril", "Ardeje");
 account1.Deposer(100);
-account1.Retirer(5000);
+//account1.Retirer(5000);
+
+var p1 = new Point(4, 5);
+var r1 = new Rectangle(3, 2, p1);
+r1.Origin.Move(0, 0);
+var s1 = new Square(3, p1);
+Console.WriteLine(s1.Surface());
 
 
 
