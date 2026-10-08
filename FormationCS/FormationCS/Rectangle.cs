@@ -19,9 +19,14 @@ namespace FormationCS
             Origin = origin;
         }
 
-        public double Surface()
+        public virtual double Surface()
         {
             return Width * Height;
+        }
+
+        public virtual double Perimetre()
+        {
+            return 2 * (Width +  Height);
         }
     }
 }

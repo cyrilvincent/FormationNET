@@ -16,15 +16,24 @@ using FormationCS;
 // Difficile : Créer la fonction IsPrime(n) retourne vrai si n est premier
 //  Reciproque n>1 est premier ssi il n'y pas de diviseur entre 2 et n-1
 
-var account1 = new Account(1, "Cyril", "Ardeje");
-account1.Deposer(100);
-//account1.Retirer(5000);
+//var account1 = new Account(1, "Cyril", "Ardeje");
+//account1.Deposer(100);
+////account1.Retirer(5000);
 
-var p1 = new Point(4, 5);
-var r1 = new Rectangle(3, 2, p1);
-r1.Origin.Move(0, 0);
-var s1 = new Square(3, p1);
-Console.WriteLine(s1.Surface());
+//var p1 = new Point(4, 5);
+//var r1 = new Rectangle(3, 2, p1);
+//r1.Origin.Move(0, 0);
+//var s1 = new Square(3, p1);
+//Console.WriteLine(s1.Surface());
+
+var c1 = new Counter();
+c1.Increment();
+c1.Increment();
+Console.WriteLine(Counter.Count);
+var c2 = new Counter();
+c2.Increment();
+Console.WriteLine(Counter.Count);
+
 
 
 
